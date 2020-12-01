@@ -4,11 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Tekkom from './tekkom';
+import Navigation from './navigation';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Tekkom />
-  </React.StrictMode>,
+    <Navigation />,
   document.getElementById('root')
 );
 

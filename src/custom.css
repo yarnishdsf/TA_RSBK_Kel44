@@ -1,0 +1,55 @@
+.card-img-top {
+    width: 100% !important;
+    height: 15vw !important;
+    object-fit: cover !important;
+}
+
+.card {
+    display: inline-flex !important;
+    height: 450px !important;
+    margin: 0 60px 60px 60px !important;
+}
+
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+    background: #fff;
+}
+
+#components-layout-demo-top .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+}
+
+.site-page-header {
+    border: 1px solid rgb(235, 237, 240);
+}
+
+.card:hover{
+    /* box-shadow: 8px 8px 5px blue;    
+    transform: scale(1.1); */
+    border-color:transparent;
+    -webkit-box-shadow:0 1px 2px -2px rgba(0,0,0,.16),0 3px 6px 0 rgba(0,0,0,.12),0 5px 12px 4px rgba(0,0,0,.09);
+    box-shadow:0 1px 2px -2px rgba(0,0,0,.16),0 3px 6px 0 rgba(0,0,0,.12),0 5px 12px 4px rgba(0,0,0,.09);
+}
+
+/* .ant-card-hoverable{
+    cursor:pointer;
+    -webkit-transition:border-color .3s,-webkit-box-shadow .3s;
+    transition:border-color .3s,-webkit-box-shadow .3s;
+    transition:box-shadow .3s,border-color .3s;
+    transition:box-shadow .3s,border-color .3s,-webkit-box-shadow .3s
+}
+.ant-card-hoverable:hover{
+    border-color:transparent;
+    -webkit-box-shadow:0 1px 2px -2px rgba(0,0,0,.16),0 3px 6px 0 rgba(0,0,0,.12),0 5px 12px 4px rgba(0,0,0,.09);
+    box-shadow:0 1px 2px -2px rgba(0,0,0,.16),0 3px 6px 0 rgba(0,0,0,.12),0 5px 12px 4px rgba(0,0,0,.09);
+} */
