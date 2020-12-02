@@ -4,6 +4,8 @@ import { Typography, Button } from 'antd';
 import { MehOutlined, SmileTwoTone } from '@ant-design/icons';
 
 import "antd/dist/antd.css";
+import Kartom from './praktikan';
+import HKartom from './header-praktikan';
 
 // import './App.css';
 
@@ -18,12 +20,12 @@ function Kartu(props) {
 
     useEffect(() => {
         if (showIcon === false) {
-            alert(`Anda menyukai Praktikan`);
+            alert(`Terima kasih atas feedback positif dari Anda`);
         }
     }, [showIcon]);
 
     return (
-        <div>
+        <div style={{ padding: '10px 10px' }}>
             <Title level={4}>{props.nama}</Title>
             <Title level={4} style={{ marginTop: '0' }}>{props.nim}</Title>
             <Title level={5} style={{ marginTop: '0' }}>{props.kel}</Title>
@@ -58,14 +60,17 @@ export default class Kartu44 extends Component {
             <div className="site-card-wrapper" style={{ padding: '50px 50px 0 50px' }}>
                 <Row gutter={8}>
                     <Col span={12}>
-                        <Card id={'kartu'} title={'PRAKTIKAN ' + this.state.prak[0]} bordered={false} style={{ textAlign: 'center' , width: '50%', margin: '0 25% 0 25%', background: '#89CFF0 !important' }}>
+                        {/* <Kartom id={'kartu'} title={'PRAKTIKAN ' + this.state.prak[0]} bordered={false} style={{  }}> */}
+                        <Kartom background='white' border='2px solid #80DEEA'>
+                            <HKartom background='#E0F7FA' font='#80DEEA' bottom='2px solid #80DEEA'>{'PRAKTIKAN ' + this.state.prak[0]}</HKartom>
                             <Kartu nama={this.state.nama[0]} nim={this.state.nim[0]} kel={this.state.kel}/>
-                        </Card>
+                        </Kartom>
                     </Col>
                     <Col span={12}>
-                        <Card title={'PRAKTIKAN ' + this.state.prak[1]} bordered={false} style={{ textAlign:'center', width: '50%', margin: '0 25% 0 25%' }}>
+                        <Kartom background='white' border='2px solid #EF9A9A'>
+                            <HKartom background='#FFEBEE' font='#EF9A9A' bottom='2px solid #EF9A9A'>{'PRAKTIKAN ' + this.state.prak[1]}</HKartom>
                             <Kartu nama={this.state.nama[1]} nim={this.state.nim[1]} kel={this.state.kel} />
-                        </Card>
+                        </Kartom>
                     </Col>
                 </Row>
             </div>

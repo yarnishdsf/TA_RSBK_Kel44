@@ -101,7 +101,7 @@ export default class tekkom extends Component {
                                 {/* <button className="button" onClick={() => this.handleUpdate(results._id)}> */}
                                 <Button type="primary" onClick={() => this.handleDelete(results.id)} danger>
                                     {" "}
-                                    Hapus Aku
+                                    Hapus Menu
                                 </Button>
                                 
                             </div>
