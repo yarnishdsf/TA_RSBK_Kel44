@@ -63,13 +63,19 @@ export default class Kartu44 extends Component {
                         {/* <Kartom id={'kartu'} title={'PRAKTIKAN ' + this.state.prak[0]} bordered={false} style={{  }}> */}
                         <Kartom background='white' border='2px solid #80DEEA'>
                             <HKartom background='#E0F7FA' font='#80DEEA' bottom='2px solid #80DEEA'>{'PRAKTIKAN ' + this.state.prak[0]}</HKartom>
-                            <Kartu nama={this.state.nama[0]} nim={this.state.nim[0]} kel={this.state.kel}/>
+                            <Kartu 
+                                nama={this.state.nama[0]} 
+                                nim={this.state.nim[0]} 
+                                kel={this.state.kel}/>
                         </Kartom>
                     </Col>
                     <Col span={12}>
                         <Kartom background='white' border='2px solid #EF9A9A'>
                             <HKartom background='#FFEBEE' font='#EF9A9A' bottom='2px solid #EF9A9A'>{'PRAKTIKAN ' + this.state.prak[1]}</HKartom>
-                            <Kartu nama={this.state.nama[1]} nim={this.state.nim[1]} kel={this.state.kel} />
+                            <Kartu 
+                                nama={this.state.nama[1]} 
+                                nim={this.state.nim[1]} 
+                                kel={this.state.kel} />
                         </Kartom>
                     </Col>
                 </Row>

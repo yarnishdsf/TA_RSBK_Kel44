@@ -105,7 +105,7 @@ export default class navigation extends Component {
                         </div>
                     </Content>
                     <Kartu44 />
-                    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+                    <Footer style={{ textAlign: 'center' }}></Footer>
                 </Layout>
                 <Modal
                     title="Tambah Menu"
@@ -117,20 +117,20 @@ export default class navigation extends Component {
                     })}
                     width={500}
                 >
-                    <div style={{ textAlign: "center" }}>
-                        <p>Nama : </p>{" "}
+                    <div style={{ textAlign: "left" }}>
+                        <p style={{ width: '80px', display: 'inline-flex' }}>Nama  </p>{" "}
                         <input type="text"
                             placeholder="Nama Menu"
                             onChange={this.handleNama}
                         />
                         <br />
-                        <p style={{ marginTop: '20px' }}>Foto : </p>{" "}
+                        <p style={{ width: '80px', display: 'inline-flex', marginTop: '20px' }}>Foto  </p>{" "}
                         <input src
                             placeholder="URL Gambar Menu"
                             onChange={this.handleFoto}
                         />
                         <br />
-                        <p style={{ marginTop: '20px' }}>Deskripsi : </p>{" "}
+                        <p style={{ width: '80px', display: 'inline-flex', marginTop: '20px' }}>Deskripsi  </p>{" "}
                         <input type="text"
                             placeholder="Deskripsi Menu"
                             onChange={this.handleDeskripsi}
